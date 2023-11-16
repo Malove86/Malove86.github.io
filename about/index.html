@@ -11,8 +11,6 @@
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <meta name="keywords" content="楸峯的个人网址导航" />
     
-    <meta name="baidu-site-verification" content="codeva-cCAOSG8MBO" />
-    
     <link rel="stylesheet" id="block-library-css"
         href="/assets/css/block-library.min-5.6.2.css" type="text/css" media="all" />
     <link rel="stylesheet" id="iconfont-css" href="/assets/css/iconfont-3.03029.1.css"
@@ -30,14 +28,6 @@
     <script type="text/javascript" src="/assets/js/content-search.js"  id="content-search-js"></script>
     
     <script>
-        
-        var _hmt = _hmt || [];
-            (function () {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?efccc04cb44fc49faddac5876180b369";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
         
     </script>
     
@@ -136,7 +126,7 @@
                                         "fixed": "false",
                                         "vertical": "middle",
                                         "horizontal": "left",
-                                        "key": "085791e805a24491b43b06cf58ab31e7"
+                                        "key": ""
                                     }
                                 }
                             </script>
@@ -232,12 +222,12 @@
 				
                 
 				
-                
-		<a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
-                    data-toggle="tooltip" data-placement="left" title="日间模式">
-                    <i class="mode-ico iconfont icon-night"></i>
+                 
+                <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"
+                    data-toggle="tooltip" data-placement="left" title="夜间模式">
+                    <i class="mode-ico iconfont icon-light"></i>
                 </a>
-                
+		
             </div>
             <div class="footer-inner">
                 <div class="footer-text">本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：***.com <br/>© 2021 - 2023 By <a href="https://github.com/shenweiyan/WebStack-Hugo">WebStack-Hugo</a><br/></div>
@@ -343,11 +333,11 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
     }
 })();
 
-$("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)");   
+$("#search-bg").css("background-image", "url()");   
 function switchNightMode(){
     var night = document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") || '0';
     if(night == '0'){
-	$("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)");
+	$("#search-bg").css("background-image", "url()");
         document.body.classList.remove('io-grey-mode');
         document.body.classList.add('io-black-mode');
         document.cookie = "night=1;path=/"
@@ -356,7 +346,7 @@ function switchNightMode(){
         $(".mode-ico").removeClass("icon-night");
         $(".mode-ico").addClass("icon-light");
     }else{
-	$("#search-bg").css("background-image", "url(assets\/images\/bg-dna.jpg)")
+	$("#search-bg").css("background-image", "url()")
         document.body.classList.remove('io-black-mode');
         document.body.classList.add('io-grey-mode');
         document.cookie = "night=0;path=/"
